@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import TextField from '@mui/material/TextField';
-
 export function Editteacher({ teacherlist, setteacherlist }) {
   const { id } = useParams();
   const history = useHistory();
@@ -17,9 +16,9 @@ export function Editteacher({ teacherlist, setteacherlist }) {
     <TextField fullWidth label="name" id="fullWidth" type="text"
       placeholder="Name"
       onChange={(event) => settname(event.target.value)} value={tname} />
-    <TextField fullWidth label="name" id="fullWidth" type="text" placeholder="poster"
+    <TextField fullWidth label="degree" id="fullWidth" type="text" placeholder="poster"
       onChange={(event) => settdegree(event.target.value)} value={tdegree} />
-    <TextField fullWidth label="name" id="fullWidth" type="text" placeholder="rating"
+    <TextField fullWidth label="exp" id="fullWidth" type="text" placeholder="rating"
       onChange={(event) => settexp(event.target.value)} value={texp} />
 
     <button onClick={() => {
